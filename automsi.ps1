@@ -26,10 +26,10 @@ $filename = "googlechromestandaloneenterprise64.msi"
 
 $PathtoFile = "C:\Resources"
 
-if (-not (Test-Path "C:\Resources" -PathType Container))
-{
+#if (-not (Test-Path "C:\Resources" -PathType Container))
+#{
     New-Item "C:\Resources" -itemType directory
-}
+#}
 
 #if (-not (Test-Path "C:\Users\$username\Resources" -PathType Container))
 #{
