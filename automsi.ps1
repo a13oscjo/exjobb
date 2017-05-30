@@ -24,16 +24,16 @@ $filename = "googlechromestandaloneenterprise64.msi"
 # "Username of the account used during installation"
 #$username = Read-Host
 
-$PathtoFile = "$env:HOMEDRIVE\Resources"
+$PathtoFile = "C:\Resources"
 
-if (-not (Test-Path "$env:HOMEDRIVE\Resources" -PathType Container))
+if (-not (Test-Path "C:\Resources" -PathType Container))
 {
-    New-Item "$env:HOMEDRIVE\Resources" -itemType directory
+    New-Item "C:\Resources" -itemType directory
 }
 
-#if (-not (Test-Path "$env:HOMEDRIVE\Users\$username\Resources" -PathType Container))
+#if (-not (Test-Path "C:\Users\$username\Resources" -PathType Container))
 #{
-#    New-Item "$env:HOMEDRIVE\Users\$username\Resources" -itemType directory
+#    New-Item "C:\Users\$username\Resources" -itemType directory
 #}
 
 $output = "$PathtoFile\$filename"
