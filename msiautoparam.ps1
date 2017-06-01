@@ -5,7 +5,7 @@ param(
 
  [Parameter(Mandatory=$True)]
  [string]
- $url,
+ $url
 
 # [Parameter(Mandatory=$True)]
 # [string]
